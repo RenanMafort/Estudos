@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Foods</string>
+    <string name="low_calorie">Low Calorie</string>
+    <string name="medium_calorie">Medium Calorie</string>
+    <string name="high_calorie">High Calorie</string>
+</resources>

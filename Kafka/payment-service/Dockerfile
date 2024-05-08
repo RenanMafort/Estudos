@@ -1,0 +1,9 @@
+FROM openjdk:17-alpine
+LABEL authors="Renan"
+
+#SERVE PARA RENOMEAR O .JAR GERADO PARA NÃO FICAR MUITO GRANDE
+ARG JAR_FILE=targer/*.jar
+#SERVE PARA RENOMEAR O .JAR GERADO PARA NÃO FICAR MUITO GRANDE
+COPY ${JAR_FILE} renanSereia.jar
+
+ENTRYPOINT ["java", "-jar","renanSereia.jar"]

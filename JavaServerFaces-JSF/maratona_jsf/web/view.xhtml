@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <h:body>
+        <h:form>
+            <h:outputText value="#{testApplicationBean.categoriaList}" /><br/>
+            <h:outputText value="#{testApplicationBean.dependenteBean.categoriasList}" /><br/>
+            <h:outputText value="Estudante Logado:#{testApplicationBean.testeSessionBean.estudante}" /><br/>
+
+            <h:outputText value="#{testViewBean.personagemSelecionado}" /><br/>
+            <h:outputText value="Dependent:#{testViewBean.dependenteBean.personagemSelecionado}" /><br/>
+            <h:commandButton actionListener="#{testViewBean.selecionarPersonagem()}" value="Selecionar Personagem"/>
+
+            <h:commandButton actionListener="#{testViewBean.selecionarPersonagem()}" value="Personagem Forward" action="view2"/>
+            <h:commandButton actionListener="#{testViewBean.selecionarPersonagem()}" value="Personagem Redirect" action="view2?faces-redirect=true"/>
+
+        </h:form>
+    </h:body>
+</h:head>
+</html>

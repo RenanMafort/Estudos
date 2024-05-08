@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head></h:head>
+<h:body>
+<h:outputText value="#{ajaxTestBean.nome}" id="nome2"/>
+<h:form>
+<h:panelGrid columns="1">
+    <!--@form @this @all @none-->
+    <h:inputText value="#{ajaxTestBean.nome}" id="nome"/>
+    <h:inputText value="#{ajaxTestBean.sobrenome}" id="sobreNome"/>
+    <h:commandButton value="Enviar" >
+        <f:ajax execute="@form" render="@form form2-sobreNomeout nome2"  listener="#{ajaxTestBean.toUpperCase}" />
+    </h:commandButton>
+
+    <h:outputText value="#{ajaxTestBean.nome}" id="nomeout"/>
+    <h:outputText value="#{ajaxTestBean.sobrenome}" id="sobreNomeout"/>
+
+    <h:inputText value="#{ajaxTestBean.nome}">
+        <f:ajax event="keyup" listener="#{ajaxTestBean.toUpperCaseNome}" render="@this nomeout" delay="2000" />
+    </h:inputText>
+    <h:selectOneMenu value="#{ajaxTestBean.animeSelecionado}">
+        <f:selectItem value="#{null}" itemLabel="Selecione um Anime"/>
+        <f:selectItems value="#{ajaxTestBean.animePersonagensMap.keySet()}" var="anime" itemLabel="#{anime}" itemValue="#{anime}"/>
+       <f:ajax event="change" listener="#{ajaxTestBean.onSelectAnime}" render="selectPerson" />
+    </h:selectOneMenu>
+
+    <h:selectOneMenu id="selectPerson" value="#{ajaxTestBean.personagemSelecionado}">
+        <f:selectItem value="#{null}" itemLabel="Selecione um Personagem"/>
+        <f:selectItems value="#{ajaxTestBean.personagens}" var="personagem" itemLabel="#{personagem}" itemValue="#{personagem}"/>
+    </h:selectOneMenu>
+
+</h:panelGrid>
+</h:form  >
+
+<h:form id="form2">
+    <h:outputText value="#{ajaxTestBean.nome}" id="nomeout2"/>
+    <h:outputText value="#{ajaxTestBean.sobrenome}" id="sobreNomeout2"/>
+</h:form>
+</h:body>
+</html>

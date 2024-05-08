@@ -1,0 +1,48 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Continuos Integration With GitHub Actions
+
+on:
+  push:
+    branches:
+      - docker-Dockerfile-docker-compose
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3.0.0
+      with:
+            # Username used to log against the Docker registry
+            username: ${{ secrets.DOCKER_USERNAME }}
+            # Password or personal access token used to log against the Docker registry
+            password: ${{ secrets.DOCKER_PASSWORD }}      
+    - name: Set up JDK 18
+      uses: actions/setup-java@v3
+      with:
+        java-version: '18'
+        distribution: 'adopt'
+        cache: maven
+    - name: Build Application Jar
+      working-directory: ./springboot3
+      run: mvn clean package -DskipTests
+      
+    - name: Docker Compose Build
+      working-directory: ./springboot3
+      run: docker compose up -d --build
+
+    - name: Docker to push image
+    # muda a tag de versão a cada push
+      run: |
+        docker tag ${{ secrets.DOCKER_USERNAME }}/renan-sereia-springboot:latest ${{ secrets.DOCKER_USERNAME }}/renan-sereia-springboot:${{ github.run_id }}
+
+        docker push ${{ secrets.DOCKER_USERNAME }}/renan-sereia-springboot:${{ github.run_id }} 
+        docker push ${{ secrets.DOCKER_USERNAME }}/renan-sereia-springboot:latest

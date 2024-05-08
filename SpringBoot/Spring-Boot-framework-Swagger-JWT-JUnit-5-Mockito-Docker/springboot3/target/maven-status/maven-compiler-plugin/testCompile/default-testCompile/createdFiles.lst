@@ -1,0 +1,11 @@
+br\com\springboot3\integrationtests\controller\withjson\PersonControllerJsonTest.class
+br\com\springboot3\integrationtests\vo\PersonVO.class
+br\com\springboot3\Springboot3ApplicationTests.class
+br\com\springboot3\unittests\mockito\exception\RequiredObjectIsNullException.class
+br\com\springboot3\unittests\mockito\mapper\mocks\MockBook.class
+br\com\springboot3\unittests\mockito\services\BookServicesTest.class
+br\com\springboot3\integrationtests\testcontainers\AbstractIntegrationTest.class
+br\com\springboot3\unittests\mockito\services\PersonServices.class
+br\com\springboot3\config\TesteConfigs.class
+br\com\springboot3\integrationtests\swagger\SwaggerIntegrationTest.class
+br\com\springboot3\integrationtests\testcontainers\AbstractIntegrationTest$Initializer.class

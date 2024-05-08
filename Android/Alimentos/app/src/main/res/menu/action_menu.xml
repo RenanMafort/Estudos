@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:id="@+id/menu_item"
+       android:checkableBehavior="single">
+       <item android:id="@+id/filter_low"
+           android:title="@string/low_calorie"/>
+       <item android:id="@+id/filter_medium"
+           android:title="@string/medium_calorie"/>
+       <item android:id="@+id/filter_high"
+           android:title="@string/high_calorie"/>
+   </group>
+</menu>

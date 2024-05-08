@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:text="Nivel da Bateria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    
+    <TextView
+        android:id="@+id/text_hour_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="110sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/text_seconds"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="00:00"
+        />
+
+    <TextView
+        android:id="@+id/text_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_hour_minute"
+        app:layout_constraintBottom_toBottomOf="@+id/text_hour_minute"
+        app:layout_constraintLeft_toRightOf="@+id/text_hour_minute"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="00"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

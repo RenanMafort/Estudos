@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+    http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+        <flow-definition id="registration">
+            <!--Usa esse cara quando você quer uma pagina de entrada diferene da convencao-->
+      <start-node>registrationInicio</start-node>
+      <view id="registrationInicio">
+          <vdl-document>/registration/registration1.xhtml</vdl-document>
+      </view>
+            <flow-call id="callPendencies">
+                <flow-reference>
+                    <flow-id>pendecis</flow-id>
+                </flow-reference>
+                <outbound-parameter>
+                    <name>userName</name>
+                    <value>#{testFlowBean.nome}</value>
+                </outbound-parameter>
+                <outbound-parameter>
+                    <name>userSurname</name>
+                    <value>#{testFlowBean.sobreome}</value>
+                </outbound-parameter>
+            </flow-call>
+            <!--Switch para validar se o usuario pode ir para a proxima pagina-->
+      <switch id="registrationPage2">
+          <case>
+              <if>#{not empty testFlowBean.nome and not empty testFlowBean.sobreome}</if>
+              <from-outcome>registration2</from-outcome>
+          </case>
+          <default-outcome>registrationInicio</default-outcome>
+      </switch>
+            <!--pagina de retorno-->
+    <flow-return id="exitToInicio">
+        <from-outcome>/inicioflow.xhtml</from-outcome>
+    </flow-return>
+      <flow-return id="exitToIndex">
+          <from-outcome>/index.xhtml</from-outcome>
+      </flow-return>
+        <!--salvando-->
+      <finalizer>#{testFlowBean.salvar}</finalizer>
+  </flow-definition>
+</faces-config>

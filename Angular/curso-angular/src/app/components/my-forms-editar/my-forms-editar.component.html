@@ -1,0 +1,6 @@
+<h1>Editando o(a) {{animal.name}}</h1>
+<app-my-forms
+  [data]="animal"
+  (onSubmit)="editAnimal($event)"
+  [buttonName]="buttonName"
+></app-my-forms>

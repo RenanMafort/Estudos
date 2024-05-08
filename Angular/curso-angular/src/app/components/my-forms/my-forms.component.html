@@ -1,0 +1,14 @@
+<div class="form-container">
+  <form id="animalForm" [formGroup]="formTest" (ngSubmit)="submit()" >
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" required>
+
+    <label for="type">Type:</label>
+    <input type="text" id="type" formControlName="type" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" formControlName="age" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
