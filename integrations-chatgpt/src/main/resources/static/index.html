@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <span>ChatGPT</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <div class="chat-message received">
+            <div class="message-content">Olá! Como posso ajudá-lo?</div>
+        </div>
+    </div>
+    <div class="user-input">
+        <input type="text" id="parametroContent" onkeypress="" placeholder="Digite sua mensagem">
+        <button  onclick="enviarMensagem()">Enviar</button>
+    </div>
+</div>
+
+<script src="functions.js"></script>
+</body>
+</html>

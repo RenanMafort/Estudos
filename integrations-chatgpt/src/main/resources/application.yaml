@@ -1,0 +1,5 @@
+openai:
+    model: gpt-3.5-turbo-16k
+    api:
+        url: https://api.openai.com/v1/chat/completions
+        key: Bearer ${api-key-chatgpt}
