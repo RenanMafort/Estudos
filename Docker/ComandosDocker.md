@@ -71,7 +71,10 @@ docker top <CONTAINER>
 docker inspect <CONTAINER>
 
 # - MOSTRA O CONSUMO DOS CONTAINER NA NOSSA MAQUINA
-docker starts 
+docker starts
+
+# - MOSTRA COMO A IMAGEM FOI CRIADA
+docker history
 
 # - UTILIZADOS PARA FAZER LOGIN NO DOCKER HUB
 docker login
