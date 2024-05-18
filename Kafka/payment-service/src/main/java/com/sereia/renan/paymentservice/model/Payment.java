@@ -1,10 +1,12 @@
 package com.sereia.renan.paymentservice.model;
 
 import lombok.Getter;
+import lombok.ToString;
 
 import java.io.Serializable;
 
 @Getter
+@ToString
 public class Payment implements Serializable {
 
     private Long id;

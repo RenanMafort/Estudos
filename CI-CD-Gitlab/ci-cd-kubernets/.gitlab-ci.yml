@@ -1,0 +1,19 @@
+stages:
+  - build
+
+build_images:
+  stage: build
+  image: docker:20.10.16
+  
+  services:
+    - docker:20.10.16-dind
+
+  variables: 
+    DOCKER_TLS_CERTDIR: "/certs"
+
+  before_script:
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+
+  script:
+    - docker build -t $DOCKER_USERNAME/app-cicd-jubernets:1.0 app/.
+    - docker push $DOCKER_USERNAME/app-cicd-jubernets:1.0

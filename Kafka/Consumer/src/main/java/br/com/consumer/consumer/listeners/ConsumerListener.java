@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Log4j2
 public class ConsumerListener {
 
-    @StrConsumerCustomListenner(groupId = "group-1")
+    @StrConsumerCustomListenner(groupId = "group-1",topics = "meu-topico-producer")
     public void create(String message) throws Exception{
         log.info("CREATE ::: Received message - {}", message);
         throw new Exception("ERROR");

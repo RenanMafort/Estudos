@@ -1,0 +1,20 @@
+stages:
+  - build
+  - deploy
+
+criar_imagem:
+  stage: build
+  tags:
+    - cloud #ESSA TAG ESTÁ EM Runners no projeto no gitlab
+  script:
+    - docker build -t renansereia/ci-cd-gcp-gitlab:1.0 app/.
+    - docker push renansereia/ci-cd-gcp-gitlab:1.0
+
+executar_imagem:
+  stage: deploy
+  needs:
+    - criar_imagem
+  tags:
+    - cloud
+  script:
+    - docker run -dti --name webserver -p 80:80 renansereia/ci-cd-gcp-gitlab:1.0

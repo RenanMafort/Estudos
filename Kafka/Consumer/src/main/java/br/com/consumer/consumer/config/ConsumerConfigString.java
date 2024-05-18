@@ -1,5 +1,6 @@
 package br.com.consumer.consumer.config;
 
+import br.com.consumer.consumer.model.People;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -26,7 +27,7 @@ public class ConsumerConfigString {
         var configs = new HashMap<String,Object>();
         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,properties.getBootstrapServers());
         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, People.class);
         return new DefaultKafkaConsumerFactory<>(configs);
     }
 

@@ -1,0 +1,46 @@
+image: node:19.1 #Substitui a imagem padrao que o gitlab usa para executar a pipeline
+
+workflow: # SERVE PARA VALIDAR EM QUAIS BRANCHS SERÁ EXECUTADO OS JOBS, ISSO SUBSTITUI O TRABALHO DE COLOCAR O "only:" em cada JOB
+  rules:
+    - if: $CI_COMMIT_BRANCH != "main"
+      when: never
+    - when: always #ELSE
+
+stages: #Esses são os estagios que serão executados em paralelo
+  - teste
+  - build
+  - deploy
+
+executar_teste: #ISSO É UM JOB
+  stage: teste
+  before_script:
+    - echo "Antes de executar o script do primeiro teste"
+    - chmod +x ./script.sh
+    - npm version
+  script:
+    - echo "Executando Testes do primeiro teste"
+    - ./script.sh  
+  after_script:
+    - echo "Depois de executar o script do primeiro teste"
+executar_teste2: #ISSO É UM JOB
+  stage: teste
+  script:
+    - echo "Executando teste do segundo script"
+  
+criar_imagens: #ISSO É UM JOB
+  stage: build
+  script:
+    - echo "Criando as imagems..."
+push_imagem: #ISSO É UM JOB
+  needs: 
+    - criar_imagens # Push imagens só vai executar se o criar_imagens terminar com sucesso
+  stage: build
+  script:
+    - echo "Push da imagem.."
+kubernetes: #ISSO É UM JOB
+  stage: deploy
+  only:
+    - deploy
+  script:
+    - echo "Executando deploy"
+    

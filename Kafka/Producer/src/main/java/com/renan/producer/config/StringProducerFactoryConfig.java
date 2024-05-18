@@ -1,5 +1,6 @@
 package com.renan.producer.config;
 
+import com.renan.producer.model.People;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -19,16 +20,16 @@ public class StringProducerFactoryConfig {
     private final KafkaProperties properties;
 
     @Bean
-    public ProducerFactory<String,String> producerFactory(){
-        var configs = new HashMap<String,Object>();
+    public ProducerFactory<String,People> producerFactory(){
+            var configs = new HashMap<String,Object>();
         configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,properties.getBootstrapServers());
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, People.class);
         return new DefaultKafkaProducerFactory<>(configs);
     }
 
     @Bean
-    public KafkaTemplate<String,String> kafkaTemplate(ProducerFactory<String,String> producerFactory){
+    public KafkaTemplate<String,People> kafkaTemplate(ProducerFactory<String,People> producerFactory){
         return new KafkaTemplate<>(producerFactory);
     }
 

@@ -1,5 +1,6 @@
 package com.renan.producer.resources;
 
+import com.renan.producer.model.People;
 import com.renan.producer.services.StringProducerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -17,7 +18,7 @@ public class StringProducerResource {
     private final StringProducerService service;
 
     @PostMapping
-    public ResponseEntity<?> sendMessage(@RequestBody String message){
+    public ResponseEntity<?> sendMessage(@RequestBody People message){
         service.sendMessage(message);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
