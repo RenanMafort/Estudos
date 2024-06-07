@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hr-config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/RenanMafort/ms-course-configs
+          username: ${USERNAME_GIT}
+          password: ${PASSWORD_GIT}
+server:
+  port: 8888
+
+

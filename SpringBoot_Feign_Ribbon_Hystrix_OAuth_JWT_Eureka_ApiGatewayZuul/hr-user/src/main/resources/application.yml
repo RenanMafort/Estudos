@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  application:
+    name: hr-user
+  datasource:
+    url: jdbc:h2:mem:testedb
+    username: sa
+    password:
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+server:
+  port: ${PORT:0}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://hr-eureka-server:8761/eureka
+

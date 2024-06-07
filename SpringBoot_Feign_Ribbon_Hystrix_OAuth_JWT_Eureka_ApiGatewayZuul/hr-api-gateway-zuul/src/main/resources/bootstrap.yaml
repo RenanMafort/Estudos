@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    defer-datasource-initialization: true
+  application:
+    name: hr-api-gateway-zuul
+  cloud:
+    config:
+      uri:
+        http://hr-config-server:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
