@@ -1,0 +1,33 @@
+Configuração de ifcfg-eth1
+Verifique se a configuração de eth1 está correta:
+sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1
+O conteúdo deve ser:
+DEVICE=eth1
+TYPE=Ethernet
+ONBOOT=yes
+BRIDGE=br0
+
+Configuração de ifcfg-br0
+Verifique se a configuração de br0 está correta:
+sudo vi /etc/sysconfig/network-scripts/ifcfg-br0
+O conteúdo deve ser:
+
+DEVICE=br0
+TYPE=Bridge
+BOOTPROTO=dhcp
+ONBOOT=yes
+DELAY=0
+
+sudo systemctl restart network
+
+Mostra as redes disponiveis:
+ip addr show
+
+Remove a rede Nat
+sudo ip route del default via 10.0.2.2 dev eth0
+ip route
+Deve estar assim:
+default via 192.168.237.254 dev eth1 proto dhcp metric 101 
+10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+192.168.237.0/24 dev eth1 proto kernel scope link src 192.168.237.134 metric 101
