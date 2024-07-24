@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"type":"nfs","guestpath":"/vagrant","hostpath":"/D/Devops-mao-na-massa/ansible-lab/control-node","disabled":false,"__vagrantfile":true,"map_uid":0,"map_gid":0,"nfs_version":3,"nfs_udp":true,"uuid":"1015310281","mount_options":["vers=3","udp","nolock"]}}}

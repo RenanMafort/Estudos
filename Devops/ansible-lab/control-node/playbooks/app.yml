@@ -1,0 +1,127 @@
+---
+- name: Configurar servidor de aplicação
+  hosts: app01
+
+  user: vagrant
+  become: yes
+
+  vars:
+    - dbhost: "db01"
+    - dbname: "notes"
+    - dbusername: "notesapp"
+    - dbpassword: "1234"
+  tasks:
+    - name: Configurar hosts lab Ansible
+      lineinfile:
+        dest: /etc/hosts
+        state: present
+        line: "{{item}}"
+      with_items:
+      - 192.168.1.2 node-control  
+      - 192.168.1.3 app01
+      - 192.168.1.4 db01
+    - name: Adicionar usuario de app
+      user:
+        name: app
+        comment: Usuario de aplicação
+        uid: 500
+    - name: Baixar e extrair o Apache Maven 3.6.3
+      become: yes
+      get_url:
+        url: https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.tar.gz
+        dest: /tmp/apache-maven-3.6.3-bin.tar.gz
+
+    - name: Criar diretório /opt/maven
+      file:
+        path: /opt/maven
+        state: directory
+        mode: '0755'
+
+    - name: Extrair o arquivo Maven
+      become: yes
+      ansible.builtin.unarchive:
+        src: /tmp/apache-maven-3.6.3-bin.tar.gz
+        dest: /opt/maven
+        remote_src: yes
+
+    - name: Configurar variáveis de ambiente do Maven
+      become: yes
+      ansible.builtin.lineinfile:
+        path: ~/.bashrc
+        line: "{{ item }}"
+        create: yes
+      loop:
+        - 'export MAVEN_HOME=/opt/maven/apache-maven-3.6.3'
+        - 'export M2_HOME=$MAVEN_HOME'
+        - 'export PATH=$MAVEN_HOME/bin:$PATH'
+
+    - name: Carregar variáveis de ambiente
+      become: yes
+      ansible.builtin.shell: |
+        source ~/.bashrc
+
+    - name: Instalação do Java
+      become: yes
+      yum:
+        name: java-11-openjdk-devel
+        state: latest
+    - name: Criação do diretório de app
+      file:
+        path: /opt/notes
+        state: directory
+        owner: app
+        group: app
+    - name: Instalação do Git
+      become: yes
+      yum:
+        name: git
+        state: latest
+    - name: Clone do repositório Notes - app
+      become: yes
+      git:
+        repo: 'https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git'
+        dest: /opt/notes
+        clone: yes
+        force: yes
+    - name: Configurar arquivo de propriedades para camada de banco de dados.
+      template:
+        src: application.properties
+        dest: /opt/notes/src/main/resources/application.properties
+    - name: Corrigir permissões no diretório target
+      ansible.builtin.file:
+        path: /opt/notes/target
+        state: directory
+        recurse: yes
+        owner: app
+        group: app
+        mode: 'u+w'
+    - name: Gerar pacote da aplicação
+      ansible.builtin.command: /opt/maven/apache-maven-3.6.3/bin/mvn -f /opt/notes/pom.xml package -DskipTests -X
+      become: yes
+      become_user: app
+    - name: Registrar versao atual do pacote
+      shell:
+        cmd: mvn -o org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version | grep -v '\['
+        chdir: /opt/notes/
+      register: app_version
+      ignore_errors: yes
+    - name: Configurar serviço do Systemd
+      template:
+        src: etc/systemd/system/notes.service
+        dest: /etc/systemd/system/notes.service
+      notify: reload daemon
+    - name: Iniciar o serviço notes
+      service:
+        name: notes
+        state: restarted
+  roles:
+    - configuracao-default-so
+  handlers:
+    - name: reload app
+      systemd:
+        state: restarted
+        daemon_reload: yes
+        name: 'notes'
+    - name: reload daemon
+      systemd:
+        daemon_reexec: yes

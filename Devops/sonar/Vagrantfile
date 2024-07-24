@@ -1,0 +1,17 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+  
+  # Configura a interface de rede em modo bridge
+  config.vm.hostname = "sonarqube"
+  config.vm.network "public_network", bridge: "Intel(R) Ethernet Connection (13) I219-LM"
+  config.vm.network "private_network", ip:"192.168.1.6"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "1024"
+    # Adicione outras configurações do VirtualBox aqui, se necessário
+  end
+
+  config.vm.provision 'shell', path: "provision.sh"
+  config.vm.network "forwarded_port", guest: 9000, host: 9000, hostip: "127.0.0.1"
+  
+end
