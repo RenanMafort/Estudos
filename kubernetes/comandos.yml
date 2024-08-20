@@ -1,0 +1,87 @@
+# A docker image está disponível aqui https://hub.docker.com/repository/docker/leandrocgsi/hello-kubernetes/general
+E o código fonte dela (em diferentes linguagens) aqui https://github.com/leandrocgsi/hello-kubernetes
+
+kubectl create deployment hello-kubernetes --image=leandrocgsi/hello-kubernetes:erudio-0.0.1
+kubectl expose deployment hello-kubernetes --type=LoadBalancer --port=8080
+
+http://localhost:8080/hello-kubernetes
+ 
+kubectl scale deployment hello-kubernetes --replicas=3
+kubectl get pods -o wide
+kubectl delete pod hello-kubernetes-d68b65f76-tfn4w
+kubectl get pods -o wide
+kubectl autoscale deployment hello-kubernetes --max=10 --cpu-percent=70
+kubectl edit deployment hello-kubernetes
+
+Edite o arquivo YML (não use TABS) adicionando a propriedade #minReadySeconds: 15
+
+https://hub.docker.com/layers/leandrocgsi/hello-kubernetes/erudio-0.0.2/images/sha256-64d8fb2a409d610ea258aee7423faddacc39e5df64cc27b9807a7b23037ba3ab?context=repo
+
+kubectl set image deployment hello-kubernetes hello-kubernetes=leandrocgsi/hello-kubernetes:erudio-0.0.2
+
+
+# Comandos KUBERNETES
+# VERSÃO DO KUBERNETES
+kubectl version
+
+# MOSTRA O CLUSTER UTILIZADO
+kubectl config current-context
+
+# DETALHA UM POUCO MAIS SOBRE O CLUSTER
+kubectl config view
+
+# MOSTRA OS NODES
+kubectl get nodes
+
+# CRIA O DEPLOYMENT
+kubectl create deployment <NOME_DO_DEPLOYMENT> --image=<IMAGEM_DOCKER/etc..>
+
+# EXPOE O DEPLOYMENT
+kubectl expose deployment <NOME_DO_DEPLOYMENT> --type=<TIPO_DO_DEPLOYMENT> --port=<PORTA_PARA_EXPOR> --target-port=<PORTA_DO_CONTAINER>
+
+# MOSTRA OS DEPLOYMENTS
+kubectl get deployments
+
+# LISTA OS SERVICES
+kubectl get services
+
+# DELETA O SERVICE
+kubectl delete service <NOME_DO_SERVICE>
+
+# MOSTRA OS EVENTOS REALIZADOS
+kubectl get events
+
+# Ordena os eventos por tempo
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# MOSTRA OS DETALHES DO POD
+kubectl describe pod <NOME_DO_POD> 
+
+# garantem que um número especificado de réplicas de pods esteja sempre em execução. Eles gerenciam o ciclo de vida desses pods, criando novos quando algum falha ou removendo pods em excesso, se houver mais do que o necessário.
+kubectl get replicaset
+
+# MOSTRA MAIS DETALHES
+kubectl get replicaset -o wide
+
+# STATUS DOS COMPONENTES
+kubectl get componentstatus
+
+# KUBERNETES DASHBOARD
+
+# https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+# https://github.com/kubernetes/dashboard 
+
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+
+kubectl create serviceaccount admin-user -n kubernetes-dashboard
+
+kubectl create clusterrolebinding admin-user-binding --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:admin-user
+
+kubectl -n kubernetes-dashboard create token admin-user
+
+kubectl proxy
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+
