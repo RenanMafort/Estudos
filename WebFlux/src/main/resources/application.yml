@@ -1,0 +1,18 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  r2dbc:
+    url: r2dbc:postgresql://localhost:9090/postgres?schema=anime
+    username: root
+    password: 1234
+server:
+  port: 8081
+  error:
+    include-stacktrace: on_param
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
