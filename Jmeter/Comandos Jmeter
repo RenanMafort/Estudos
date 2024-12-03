@@ -1,0 +1,57 @@
+Gerenciamento da Máquina Virtual
+
+    vagrant init
+        Inicializa um novo projeto Vagrant criando um Vagrantfile no diretório atual.
+
+    vagrant up
+        Inicia e provisiona a máquina virtual conforme especificado no Vagrantfile.
+
+    vagrant halt
+        Desliga a máquina virtual de forma segura.
+
+    vagrant reload
+        Reinicia a máquina virtual e recarrega as configurações do Vagrantfile.
+       
+    vagrant reload --provision
+        Reinicia a máquina virtual e recarrega as configurações do Vagrantfile juntamente com o provision.sh.
+
+    vagrant suspend
+        Suspende a execução da máquina virtual (salva o estado atual).
+
+    vagrant resume
+        Retoma a máquina virtual a partir do estado suspenso.
+
+    vagrant destroy
+        Destrói a máquina virtual e remove qualquer estado armazenado.
+
+Gerenciamento de Conexão e Acesso
+
+    vagrant ssh
+        Conecta-se à máquina virtual via SSH.
+
+    vagrant ssh-config
+        Mostra as configurações de SSH para se conectar manualmente à máquina virtual.
+
+    vagrant scp [source] [destination]
+        Copia arquivos entre o host e a máquina virtual (disponível com o plugin vagrant-scp).
+
+Gerenciamento de Plugins e Boxes
+
+    vagrant box add <nome>
+        Faz o download e adiciona uma box ao Vagrant.
+
+    vagrant box list
+        Lista todas as boxes disponíveis no host.
+
+    vagrant box remove <nome>
+        Remove uma box do Vagrant.
+
+    vagrant plugin install <nome>
+        Instala um plugin no Vagrant (exemplo: vagrant-vbguest).
+
+    vagrant plugin list
+        Lista todos os plugins instalados.
+
+    vagrant plugin uninstall <nome>
+        Remove um plugin do Vagrant.
+
