@@ -60,7 +60,7 @@ Se o serviço não estiver ativo, inicie-o:
 
 sudo systemctl start docker
 
-# 6- Baixar o [Docker CLI]([https://www.google.com.br](https://download.docker.com/win/static/stable/x86_64/)) para usar os comandos docker do HOST para refletir na VM
+# 6- Baixar o [Docker CLI]([https://download.docker.com/win/static/stable/x86_64/]) para usar os comandos docker do HOST para refletir na VM
 
 Extrair o arquivo baixado, usar o CMD para executar o docker.exe
 
