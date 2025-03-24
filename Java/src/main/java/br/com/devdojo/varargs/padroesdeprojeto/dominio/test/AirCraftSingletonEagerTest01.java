@@ -10,7 +10,8 @@ public class AirCraftSingletonEagerTest01 {
     }
 
     private static void bookSeat(String seat){
-        AirCraftSingletonEager airCraftSingletonEager = AirCraftSingletonEager.getInstance();
+//        AirCraftSingletonEager airCraftSingletonEager = AirCraftSingletonEager.getInstance();
+        AirCraftSingletonEager airCraftSingletonEager = new AirCraftSingletonEager("AABB");
         System.out.println(airCraftSingletonEager.bookSeat(seat));
 
     }

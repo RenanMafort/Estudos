@@ -7,18 +7,19 @@ import java.nio.file.attribute.BasicFileAttributes;
 class ListAllFiles extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs)  {
-           System.out.println(file.getFileName());
+           System.out.println("visitFile: " + file.getFileName());
            return FileVisitResult.CONTINUE;
     }
 
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-        System.out.println("pre visit" + dir.getFileName());
+        System.out.println("pre visit: " + dir.getFileName());
         return FileVisitResult.CONTINUE;
     }
 
     @Override
     public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
+        System.out.println("visitFileFailed: " + file.getFileName());
         return super.visitFileFailed(file, exc);
     }
 
@@ -30,7 +31,7 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 }
 public class SimpleFileVisitorTest02 {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("pasta");
+        Path path = Paths.get("renansereia/renan");
         Files.walkFileTree(path, new ListAllFiles());
     }
 }

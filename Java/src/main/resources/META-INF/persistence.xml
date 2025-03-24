@@ -6,7 +6,7 @@
     <persistence-unit name="java-dev-dojo">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-       <mapping-file>META-INF/consultas.xml</mapping-file>
+       <mapping-file>consultas.xml</mapping-file>
         <class>JPA.HIBERNATE.modelo.basico.Usuario</class>
 
 <!--        <mapping-file>META-INF/consultas.xml</mapping-file>-->

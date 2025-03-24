@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DynamoDBRequestHistory">
+    <option name="requestHistory">
+      <map>
+        <entry key="bf9aada1-23d0-479f-85f8-d8924110532d">
+          <value>
+            <list>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  TableName: &quot;vitor_pinto&quot;,&#10;  AttributeDefinitions: [&#10;    {&#10;      AttributeName: &quot;&quot;,&#10;      AttributeType: &quot;&quot;&#10;    }&#10;  ],&#10;  BillingMode: &quot;&quot;,&#10;  KeySchema: [&#10;    {&#10;      AttributeName: &quot;&quot;,&#10;      KeyType: &quot;&quot;&#10;    }&#10;  ]&#10;}" />
+                <option name="operation" value="CreateTable" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  TableName: &quot;vitor_pinto&quot;,&#10;  AttributeDefinitions: [&#10;    {&#10;      AttributeName: &quot;&quot;,&#10;      AttributeType: &quot;&quot;&#10;    }&#10;  ],&#10;  BillingMode: &quot;&quot;,&#10;  KeySchema: [&#10;    {&#10;      AttributeName: &quot;&quot;,&#10;      KeyType: &quot;&quot;&#10;    }&#10;  ]&#10;}" />
+                <option name="operation" value="CreateTable" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{Statement:&quot;INSERT INTO teste VALUE {\n'client_name': 'testando'\n}&quot;}" />
+                <option name="operation" value="ExecuteStatement" />
+                <option name="sqlStatement" value="INSERT INTO teste VALUE {&#10;'client_name': 'testando'&#10;}" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;teste&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      S: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      S: &quot;3&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      S: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      S: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;3&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      S: &quot;Renan&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_name = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  KeyConditionExpression: &quot;client_id = :PK_val&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:PK_val&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Query" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_lastName.client_id = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;2&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_lastName.client_id = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  FilterExpression: &quot;client_lastName.client_id = :val_1&quot;,&#10;  ExpressionAttributeValues: {&#10;    &quot;:val_1&quot;: {&#10;      N: &quot;1&quot;&#10;    }&#10;  },&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+              <HistoryRequest>
+                <option name="body" value="{&#10;  Limit: 50,&#10;  TableName: &quot;app_clients&quot;,&#10;  ReturnConsumedCapacity: &quot;TOTAL&quot;&#10;}" />
+                <option name="operation" value="Scan" />
+              </HistoryRequest>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="searchQueryHistory">
+      <list>
+        <SearchQueryHistory>
+          <option name="query" value="client_id = '1'" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = '3'" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = '2'" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = '1'" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = 3" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = 2" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_id = 1" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_name = 'Renan'" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoOperation" value="false" />
+          <option name="query" value="client_name = 1" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoIndex" value="false" />
+          <option name="query" value="client_name = 2" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoIndex" value="false" />
+          <option name="query" value="client_id = 1" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="autoIndex" value="false" />
+          <option name="query" value="client_id = 2" />
+          <option name="searchOperation" value="QUERY" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="query" value="client_lastName.client_id = 2" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+        <SearchQueryHistory>
+          <option name="query" value="client_lastName.client_id = 1" />
+          <option name="table" value="app_clients" />
+        </SearchQueryHistory>
+      </list>
+    </option>
+  </component>
+</project>

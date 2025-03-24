@@ -7,7 +7,8 @@ import java.util.Optional;
 import java.util.function.Predicate;
 
 public class MangaRepository {
-    private static final List<Manga> mangas = List.of(new Manga(1,"Renan",  50),new Manga(2,"Renan",  50),new Manga(3,"Renan",  50));
+    private static final List<Manga> mangas = List.of(new Manga(1,"Renan",  50),
+            new Manga(2,"Renan",  50),new Manga(3,"Renan",  50));
 
     public  static Optional<Manga> findById(Integer id){
        return findBy(m -> m.getId().equals(id));

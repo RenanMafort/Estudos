@@ -26,8 +26,8 @@ public class StreanTest08 {
                 .reduce(Double::sum)
                 .ifPresent(System.out::println);
 
-        List<String> a = list.stream().map(ln -> ln.getTitle()).filter(p -> p.startsWith("A")).collect(Collectors.toList());
-        System.out.println(a);
+//        List<String> a = list.stream().map(ln -> ln.getTitle()).filter(p -> p.startsWith("A")).collect(Collectors.toList());
+//        System.out.println(a);
     }
 
 }

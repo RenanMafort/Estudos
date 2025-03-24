@@ -10,10 +10,12 @@ import java.util.stream.*;
 public class StreamTest09 {
     public static void main(String[] args) {
 //        IntStream.rangeClosed(1,50).filter( n -> n %2==0).forEach( n -> System.out.print(n + " "));
+
 //        System.out.println();
 //        IntStream.range(1,50).filter( n -> n %2==0).forEach( n -> System.out.print(n + " "));
 //        System.out.println();
-//        Stream.of("Renan","Sereia","Mafort").map(x -> x.toUpperCase()).forEach(s -> System.out.print(s + " "));
+        Stream.of("Renan","Sereia","Mafort").map(x -> x.toUpperCase()).forEach(s -> System.out.print(s + " "));
+        Arrays.stream(new int[]{2,4,5,616,161,161}).mapToObj(n -> n> 5).forEach(System.out::println);
 //
 //        int num[] = {1,2,3,4,5};
 //        Arrays.stream(num).average().ifPresent(System.out::println);
@@ -23,8 +25,8 @@ public class StreamTest09 {
 //        }catch (IOException e){
 //            e.printStackTrace();
 //        }
-
-        IntStream.range(1,50).mapToObj(n -> n % 2 == 0).forEach(System.out::println);
+//
+//        IntStream.range(1,50).mapToObj(n -> n % 2 == 0).forEach(System.out::println);
 
     }
 }

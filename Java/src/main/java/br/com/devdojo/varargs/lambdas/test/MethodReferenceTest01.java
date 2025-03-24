@@ -14,8 +14,10 @@ public class MethodReferenceTest01 {
                 new Anime("testando", 6),
                 new Anime("n sei", 500)));
 
-        animeList.sort((a1, a2) -> a1.getTitle().compareTo(a2.getTitle()));
+
         animeList.sort(AnimeComparators::compareByEpisodes);
+
+        animeList.sort((a1, a2) -> a1.getTitle().compareTo(a2.getTitle()));
         Collections.sort(animeList, Comparator.comparing(Anime::getTitle));
         System.out.println(animeList);
     }

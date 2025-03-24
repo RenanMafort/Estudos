@@ -4,12 +4,15 @@ import java.util.Date;
 
 public class Dates {
     public static void main(String[] args) {
-        Date date = new Date(1683558854611L);
-        System.out.println(date);
-        date.setTime(date.getTime() + 3_600_000 * 10);
+//        Date date = new Date(1683558854611L);
+//        System.out.println(date);
+//        date.setTime(date.getTime() + 3_600_000 * 10);
+//
+//        System.out.println("Today - " + date.getTime());
+//        System.out.println(date.getHours());
+//        System.out.println(date);
 
-        System.out.println("Today - " + date.getTime());
-        System.out.println(date.getHours());
-        System.out.println(date);
+        Date date = new Date(3_000_00_00);
+        System.out.println(date.toString());
     }
 }

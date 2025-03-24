@@ -2,7 +2,7 @@ package br.com.devdojo.varargs.interfaces;
 
 public class FileLoader implements DataLoader,DataRemover{
     @Override
-    public void load() {
+     public void load() {
         System.out.println("Carregando arquivo");
     }
 

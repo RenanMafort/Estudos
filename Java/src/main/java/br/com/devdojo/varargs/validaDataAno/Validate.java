@@ -42,6 +42,6 @@ public class Validate {
     }
 
     public static void main(String[] args) {
-        System.out.println(isDataValida("31/02/2023"));
+        System.out.println(isDataValida("99/02/2023"));
     }
 }

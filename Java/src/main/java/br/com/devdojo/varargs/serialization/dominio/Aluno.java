@@ -26,10 +26,14 @@ public class Aluno implements Serializable  {
         try {
             oos.defaultWriteObject();
             oos.writeUTF(turma.getNome());
+            oos.writeUTF(turma.getSobreNome());
+            oos.writeUTF(turma.getIdade());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+
 
 
     @Serial
@@ -37,8 +41,12 @@ public class Aluno implements Serializable  {
         try {
             ois.defaultReadObject();
             String nomeTurma = ois.readUTF();
-            turma = new Turma(nomeTurma);
+            String sobrenome = ois.readUTF();
+            String idade = ois.readUTF();
+            turma = new Turma(nomeTurma,sobrenome,idade);
             System.out.println(nomeTurma);
+            System.out.println(sobrenome);
+            System.out.println(idade);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

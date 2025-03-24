@@ -16,8 +16,8 @@ public class ExceptionTest1 {
             System.out.println("Arquivo criado? = " + criado);
             System.out.println(file.exists());
         }catch (IOException e){
-            e.printStackTrace();
-            System.out.println("MESSAGE = " + e.getCause());
+
+            System.out.println("MESSAGE = ");
         }
     }
 }

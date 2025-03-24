@@ -6,7 +6,7 @@ import java.util.Set;
 public final class AirCraftSingletonEager {
 
     //Eager initialization
-    private static final AirCraftSingletonEager INSTANCE = new AirCraftSingletonEager("787-900");
+//    private  final AirCraftSingletonEager INSTANCE = new AirCraftSingletonEager("787-900");
 
     private final Set<String> availableSeats = new HashSet<>();
     private final String name;
@@ -21,10 +21,11 @@ public final class AirCraftSingletonEager {
         availableSeats.add("1C");
     }
 
-    public static AirCraftSingletonEager getInstance(){
-        return INSTANCE;
-    }
+//    public static AirCraftSingletonEager getInstance(){
+//        return INSTANCE;
+//    }
     public boolean bookSeat(String seats){
+        this.availableSeats.forEach(System.out::println);
         return availableSeats.remove(seats);
     }
 

@@ -7,5 +7,6 @@ public class JogadorTest {
 
         jogador.imprime();
         jogador.setTime(time);
+        jogador.imprime();
     }
 }

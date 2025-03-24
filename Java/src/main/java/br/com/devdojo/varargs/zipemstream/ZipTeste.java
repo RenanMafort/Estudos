@@ -1,15 +1,12 @@
 package br.com.devdojo.varargs.zipemstream;
 
-import org.apache.wink.common.internal.providers.entity.csv.CsvWriter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
-import java.util.stream.IntStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -75,9 +72,9 @@ public class ZipTeste {
 
     public static void main(String[] args) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        byteArrayOutputStream.write(CsvWriter.getCSVRow(gerarCabecalhoArray()).getBytes());
+//        byteArrayOutputStream.write(CsvWriter.getCSVRow(gerarCabecalhoArray()).getBytes());
         byteArrayOutputStream.write("\n".getBytes());
-        byteArrayOutputStream.write(CsvWriter.getCSVRow(adicionarLinha()).getBytes());
+//        byteArrayOutputStream.write(CsvWriter.getCSVRow(adicionarLinha()).getBytes());
 
         byte[] zipBytes = createZip(byteArrayOutputStream.toByteArray());
 

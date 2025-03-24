@@ -11,12 +11,12 @@ class ListJavaFiles extends SimpleFileVisitor<Path> {
 
            System.out.println(file.getFileName());
 
-           return FileVisitResult.SKIP_SIBLINGS;
+           return FileVisitResult.SKIP_SUBTREE;
     }
 }
 public class SimpleFileVisitorTest01 {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("C:\\Users\\Renan\\Desktop\\testeSimpleFileVisitor");
+        Path path = Paths.get("renansereia/renan");
         Files.walkFileTree(path, new ListJavaFiles());
     }
 }

@@ -1,5 +1,8 @@
 package br.com.devdojo.varargs.padroesdeprojeto.dominio;
 
+import lombok.Getter;
+
+@Getter
 public class ReportDTO {
     private String aircraftName;
     private Country country;
@@ -48,5 +51,15 @@ public class ReportDTO {
             reportDTO.aircraftName = this.aircraftName;
             return reportDTO;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "ReportDTO{" +
+                "aircraftName='" + aircraftName + '\'' +
+                ", country=" + country +
+                ", currency=" + currency.getSymbol() +
+                ", personName='" + personName + '\'' +
+                '}';
     }
 }

@@ -16,8 +16,9 @@ public class StreanTest04 {
         escola.add(students);
 
         for (List<String> people : escola) {
+//                System.out.println(people);
             for (String person : people) {
-                System.out.println(person);
+//                System.out.println(person);
             }
         }
 

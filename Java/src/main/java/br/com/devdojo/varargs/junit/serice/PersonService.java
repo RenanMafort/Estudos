@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class PersonService {
     public boolean isAdult(Person person){
-        Objects.requireNonNull(person,"Person can't be null");
+        Objects.requireNonNull(person,"Person can't be nulasdasl");
         return person.getAge() >= 18;
     }
 

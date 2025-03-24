@@ -7,10 +7,16 @@ import java.util.function.Function;
 public class LambdaFunction {
     public static void main(String[] args) {
         List<String> renan = List.of("renan", "mafort", "sereia");
-        List<Integer> map = map(renan, (String::length));
+        List<Integer> map = map(renan, new Function<String, Integer>() {
+            @Override
+            public Integer apply(String s) {
+                return s.length();
+            }
+        });
+        List<Integer> map2 = map(renan, (String::length));
         List<String> map1 = map(renan, s -> s.toUpperCase());
         System.out.println(map);
-        System.out.println(map1);
+//        System.out.println(map1);
     }
     private static <T,R> List<R> map(List<T> list, Function<T,R> function){
         List<R> resut = new ArrayList<>();

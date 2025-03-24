@@ -31,7 +31,7 @@ public class AtomicIntegerTest01 {
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
         Runnable r = () -> {
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 100_00; i++) {
                 counter.increment();
             }
         };

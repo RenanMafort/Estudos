@@ -8,5 +8,8 @@ public class Main {
         dataBaseLoader.checkPermission();
         fileLoader.load();
         fileLoader.checkPermission();
+
+        System.out.println(DataLoader.MAX_DATA_SIZE);
+        DataLoader.retrieveMaxDataSize();
     }
 }

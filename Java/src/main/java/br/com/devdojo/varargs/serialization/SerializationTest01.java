@@ -13,10 +13,10 @@ import java.nio.file.Paths;
 public class SerializationTest01<T> {
     public static void main(String[] args) {
         Aluno aluno = new Aluno(1L,"Renan","1234");
-        Turma turma = new Turma("TESTANDO");
+        Turma turma = new Turma("9b","9c","9d");
         aluno.setTurma(turma);
-        serializar(aluno);
-//        deserializar();
+//        serializar(aluno);
+        deserializar();
     }
 
     private static void serializar(Aluno aluno){

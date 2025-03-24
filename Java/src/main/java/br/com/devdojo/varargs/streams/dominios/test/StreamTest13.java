@@ -23,7 +23,7 @@ public class StreamTest13 {
 
         System.out.println(collect);
 
-        //Map<Category,Map<Promotion,Lst<LightNovel>>>
+//        Map<Category,Map<Promotion,Lst<LightNovel>>>
         Map<Category, Map<Promotion, List<LighNovel>>> collect1 = list.stream().collect(Collectors.groupingBy(LighNovel::getCategory, Collectors.groupingBy(lighNovel -> lighNovel.getPrice() < 6 ? Promotion.UNDER_PROMOTION : Promotion.NORMAL_PRICE)));
 
         System.out.println(collect1);

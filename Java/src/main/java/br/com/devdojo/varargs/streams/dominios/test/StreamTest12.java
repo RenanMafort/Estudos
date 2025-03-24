@@ -37,6 +37,10 @@ public class StreamTest12 {
         System.out.println("-----------");
         Map<Category, List<LighNovel>> collect = list.stream().collect(Collectors.groupingBy(LighNovel::getCategory));
         System.out.println(collect);
+        System.out.println("-----------");
+
+        Map<String, List<LighNovel>> collect1 = list.stream().collect(Collectors.groupingBy(LighNovel::getTitle));
+        System.out.println(collect1);
 
 
     }

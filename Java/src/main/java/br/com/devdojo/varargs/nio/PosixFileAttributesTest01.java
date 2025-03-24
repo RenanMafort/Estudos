@@ -14,7 +14,7 @@ import java.util.Set;
 public class PosixFileAttributesTest01 {
     public static void main(String[] args) throws IOException {
 //        Path path = Paths.get("home/renan/dev/file.txt");
-        Path path = Paths.get("fileDebora.txt");
+        Path path = Paths.get("/home/vagrant/file.txt");
         PosixFileAttributes posixFileAttributes = Files.readAttributes(path, PosixFileAttributes.class);
         System.out.println(posixFileAttributes.permissions());
         PosixFileAttributeView fileAttributeView = Files.getFileAttributeView(path, PosixFileAttributeView.class);

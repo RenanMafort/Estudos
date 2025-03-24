@@ -13,13 +13,15 @@ import java.util.function.Supplier;
 public class MethodReferenceTest04 {
     public static void main(String[] args) {
         Supplier<AnimeComparators> animeComparatorsSupplier = AnimeComparators::new;
-        Supplier<AnimeComparators> animeComparatorsSupplier2 = AnimeComparators::new;
+        Supplier<AnimeComparators> animeComparatorsSupplier2 = () -> new AnimeComparators();
+        AnimeComparators animeComparators1 = animeComparatorsSupplier2.get();
+
         AnimeComparators animeComparators = animeComparatorsSupplier.get();
         List<Anime> animeList = new ArrayList<>(List.of(new Anime("teste", 2),
                 new Anime("testando", 6),
                 new Anime("n sei", 500)));
 
-        animeList.sort(animeComparators::compareByEpisodesNonStatic);
+        animeList.sort(AnimeComparators::compareByEpisodes);
         System.out.println(animeList);
 
 //        BiFunction<String, Integer,Anime> animeBiFunction = (t,e ) -> new Anime(t,e);

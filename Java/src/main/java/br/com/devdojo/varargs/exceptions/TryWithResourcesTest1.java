@@ -8,6 +8,10 @@ import java.io.*;
 
 public class TryWithResourcesTest1 {
     public static void main(String[] args) {
+        Integer num1 = 1;
+
+        num1.intValue();
+
         lerArquivo();
     }
 
@@ -16,8 +20,10 @@ public class TryWithResourcesTest1 {
             Leitor2 leitor2 = new Leitor2();
             Leitor3 leitor3 = new Leitor3()){
 
-        }catch (Exception e){
+            leitor3.teste();
 
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
     public static void lerArquivo2(){

@@ -4,6 +4,7 @@ import java.util.Locale;
 
 public class LocalTest02 {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("en","US"));
         System.out.println(Locale.getDefault());
         String[] isoCountries = Locale.getISOCountries();
         String[] isoLanguages = Locale.getISOLanguages();

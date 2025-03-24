@@ -11,7 +11,7 @@ public class Main {
 
 
 
-//        Funcionario f = new Funcionario("re",12);
+        Funcionario f = new Funcionario("re",12);
 //        Pessoa p = new Pessoa("re",12);
 
 

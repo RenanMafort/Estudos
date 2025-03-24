@@ -1,5 +1,8 @@
 package br.com.devdojo.varargs.padroesdeprojeto.dominio;
 
+import lombok.Getter;
+
+@Getter
 public class Person {
     private String firstName;
     private String lastName;

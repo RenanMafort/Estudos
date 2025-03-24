@@ -6,7 +6,7 @@ public class FutureTest01 {
     public static void main(String[] args) throws ExecutionException, InterruptedException,TimeoutException {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Future<Double> dollarRequest = executorService.submit(() -> {
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             return  4.350;
         });
         System.out.println(doSomething());

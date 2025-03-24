@@ -13,7 +13,9 @@ public class AirCraftSingletonEagerLazyt01 {
         System.out.println(AirCraftSingletonLazy.getInstance());
 
         Constructor<AirCraftSingletonLazy> declaredConstructor = AirCraftSingletonLazy.class.getDeclaredConstructor(Integer.class);
-        declaredConstructor.setAccessible(true);
+        declaredConstructor.setAccessible(Boolean.TRUE);
+        AirCraftSingletonLazy airCraftSingletonLazy = declaredConstructor.newInstance(2);
+        System.out.println(airCraftSingletonLazy);
     }
 
     private static void bookSeat(String seat){

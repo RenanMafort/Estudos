@@ -5,9 +5,7 @@ import br.com.devdojo.varargs.lambdas.dominio.services.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiPredicate;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class MethodReferenceTest03 {
     public static void main(String[] args) {
@@ -16,11 +14,12 @@ public class MethodReferenceTest03 {
         System.out.println(names);
 
         Function<String,Integer> parsteInteger = Integer::parseInt;
-        Integer num = parsteInteger.apply("8");
+        Integer num = parsteInteger.apply("10");
+//        Integer num = parsteInteger.apply("8");
         System.out.println(num);
 
 
-//        Predicate<List<String>> contains = s -> s.contains("Abacate");
+        Predicate<List<String>> contains = s -> s.contains("Abacate");
 //        boolean test = contains.test(names);
 //        System.out.println(test);
 
@@ -28,6 +27,10 @@ public class MethodReferenceTest03 {
         BiPredicate<List<String>,String> checkName = List::contains;
         boolean renan = checkName.test(names, "Renan");
         System.out.println(renan);
+
+        BiFunction<String, Integer, Anime> animes = Anime::new;
+        Anime debs = animes.apply("Debs", 20);
+        System.out.println(debs);
 
 
     }

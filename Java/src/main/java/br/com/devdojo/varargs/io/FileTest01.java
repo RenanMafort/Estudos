@@ -2,8 +2,10 @@ package br.com.devdojo.varargs.io;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.time.Instant;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class FileTest01 {
@@ -18,7 +20,8 @@ public class FileTest01 {
             System.out.println("is file "+file.isFile());
             System.out.println("is hidden "+file.isHidden());
             System.out.println("Last modified - " + new Date(file.lastModified()));
-            System.out.println("Last modified - " + Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()).toLocalDateTime());
+            System.out.println("Last modified - " + Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()).toLocalDateTime()
+                    .format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
             if (file.exists()){
                 System.out.println(file.delete());

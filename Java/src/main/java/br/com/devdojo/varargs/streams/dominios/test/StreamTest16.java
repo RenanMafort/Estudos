@@ -14,7 +14,7 @@ public class StreamTest16 {
 
     public static void main(String[] args) {
         System.out.println(Runtime.getRuntime().availableProcessors());
-        long num = 10_000_000;
+        long num = 10_000_000L;
         sumFor(num);
         sumStreamIterate(num);
         sumParalleStream(num);

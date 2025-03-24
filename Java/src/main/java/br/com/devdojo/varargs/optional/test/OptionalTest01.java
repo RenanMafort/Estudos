@@ -13,11 +13,13 @@ public class OptionalTest01 {
         System.out.println(o3);
 
         System.out.println("-----------------------");
-        Optional<String> rennan = findName("Renna");
-        System.out.println(rennan);
-        String empty = rennan.orElse("EMPTY");
-        rennan.ifPresent((s) -> System.out.println(s.toUpperCase()));
-        System.out.println(empty);
+        Optional<String> rennan = findName("Rennas  ");
+        rennan.orElseThrow(ArrayIndexOutOfBoundsException::new);
+
+//        System.out.println(rennan);
+//        String empty = rennan.orElse("EMPTY");
+//        rennan.ifPresent((s) -> System.out.println(s.toUpperCase()));
+//        System.out.println(empty);
 
 
     }
