@@ -17,7 +17,7 @@ db.books.replaceOne({_id: 120},{foi: "substituido"})
 
 db.books.find({_id: 201})
 
-db.books.updateOne({_id: 201}, {$: {longDescription: "teste"}})
+db.books.updateOne({_id: 201}, {$set: {longDescription: "teste"}})
 db.books.updateOne({_id: 201}, {$push: {categories: "JS"}})
 
 db.books.find()
