@@ -1,0 +1,24 @@
+
+use booksData
+
+db.books.find({_id: 314})
+
+db.books.updateOne({_id:314},{$set: {pageCount: 1000}})
+db.books.find({categories: "Java"})
+
+db.books.updateMany({categories: "Java"}, {$set: {status: "UNPUBLISH"}})
+
+db.books.find({authors: "Vikram Goyal"})
+db.books.updateMany({authors: "Vikram Goyal"},{$set: {downloads: 1000}})
+
+db.books.find({_id: 120})
+
+db.books.replaceOne({_id: 120},{foi: "substituido"})
+
+db.books.find({_id: 201})
+
+db.books.updateOne({_id: 201}, {$set: {longDescription: "teste"}})
+db.books.updateOne({_id: 201}, {$push: {categories: "JS"}})
+
+db.books.find()
+db.books.updateMany({},{$set: {atualizado: true}})

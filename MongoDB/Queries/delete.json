@@ -1,9 +1,0 @@
-use booksData
-
-db.books.find({_id: 20})
-db.books.deleteOne({_id: 20})
-
-db.books.deleteMany({categories: "Java"})
-
-db.books.find().count()
-db.books.deleteMany({})
