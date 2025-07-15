@@ -93,6 +93,9 @@ docker rmi -f $(docker images -aq)
 docker network rm $(docker network ls -q)
 docker volume rm $(docker volume ls -q)
 
+# - MOVER ARQUIVOS PARA UM CONTAINER
+ docker cp <arquivo> <nome_container>:/<arquivo>
+
 
 
 █░░▒█ █▀▀▀█ █░░░ █░▒█ █▀▄▀█ █▀▀▀ █▀▀▀█
