@@ -14,7 +14,7 @@ public class StreamTest16 {
 
     public static void main(String[] args) {
         System.out.println(Runtime.getRuntime().availableProcessors());
-        long num = 10_000_000L;
+        long num = 100_000_000L;
         sumFor(num);
         sumStreamIterate(num);
         sumParalleStream(num);
@@ -68,4 +68,7 @@ public class StreamTest16 {
         long end = System.currentTimeMillis();
         System.out.println(result + " " + (end-init) +"ms");
     }
+
+
+
 }

@@ -26,4 +26,12 @@ public class Time {
     public void setJogadores(List<Jogador> jogadores) {
         this.jogadores = jogadores;
     }
+
+    @Override
+    public String toString() {
+        return "Time{" +
+                "nome='" + nome + '\'' +
+                ", jogadores=" + jogadores +
+                '}';
+    }
 }

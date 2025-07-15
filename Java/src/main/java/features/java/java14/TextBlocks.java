@@ -9,7 +9,7 @@ public class TextBlocks {
                 """;
 
         String html = """
-                <!DOCTYPE html>\
+                <!DOCTYPE\s\s\s\s html>\
                 <html lang="en">\
                 <head>
                     <meta charset="UTF-8">

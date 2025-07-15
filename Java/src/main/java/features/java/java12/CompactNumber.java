@@ -6,7 +6,7 @@ import java.util.Locale;
 
 public class CompactNumber {
     public static void main(String[] args) {
-        NumberFormat compactNumberInstance = CompactNumberFormat.getCompactNumberInstance(new Locale("pt","BR"), NumberFormat.Style.LONG);
+        NumberFormat compactNumberInstance = CompactNumberFormat.getCompactNumberInstance(Locale.KOREA, NumberFormat.Style.LONG);
         System.out.println(compactNumberInstance.format(100_000));
 
     }

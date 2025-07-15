@@ -1,6 +1,6 @@
 package br.com.devdojo.varargs.enums;
 
-public class Cliente {
+public  class Cliente {
     private String nome;
     public TipoEnum tipoEnum;
     public TipoPagamento tipoPagamento;

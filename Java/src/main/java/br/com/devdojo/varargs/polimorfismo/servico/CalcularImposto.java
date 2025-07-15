@@ -10,6 +10,11 @@ import java.util.List;
 public class CalcularImposto {
 
     public static void calcularImposto(Produto produto){
+//        if (produto instanceof Tomate){
+//            Tomate tomate = (Tomate) produto;
+//            tomate.calcularImposto();
+//        }
+//        Tomate tomate = (Tomate) produto;
 
         List<String> list = new LinkedList<>();
         list.add("1");
@@ -20,9 +25,6 @@ public class CalcularImposto {
         System.out.println("Valor " + produto.getValor());
         System.out.println("Imposto a ser pago " + imposto);
 
-        if (produto instanceof Tomate){
-            Tomate tomate = (Tomate) produto;
-        }
-//        Tomate tomate = (Tomate) produto;
+
     }
 }

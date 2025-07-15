@@ -11,14 +11,6 @@ public class Pessoa {
         System.out.println(this.endereco);
     }
 
-
-
-    public final void imprime2(){
-        System.out.println(this.nome);
-        System.out.println(this.cpf);
-        System.out.println(this.endereco);
-    }
-
     public String getNome() {
         return nome;
     }

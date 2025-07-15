@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class BasicFieAttributesTest02 {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("D:\\Meus_Itens\\java-dev-dojo\\renan\\subpasta\\subsubpasta\\arquivo_renomeado2.txt");
+        Path path = Paths.get("arquivos/renan.txt");
         BasicFileAttributes basicFileAttributes = Files.readAttributes(path, BasicFileAttributes.class);
 
         FileTime creationTime = basicFileAttributes.creationTime();

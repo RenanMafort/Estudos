@@ -1,10 +1,8 @@
 package br.com.devdojo.varargs.serialization.dominio;
 
-import java.io.Serializable;
-
 public class Turma  {
     private String nome;
-    private String sobreNome;
+    private transient String sobreNome;
     private String idade;
 
     public Turma(String nome, String sobreNome, String idade) {

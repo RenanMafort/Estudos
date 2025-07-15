@@ -22,6 +22,7 @@ public class LocalDateTest01 {
         System.out.println(localDate.lengthOfYear());
         System.out.println(localDate.isLeapYear());
         System.out.println(localDate.get(ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH));
+        System.out.println(localDate.get(ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH));
 
         LocalDate localDate1 = LocalDate.now();
         System.out.println(localDate1);

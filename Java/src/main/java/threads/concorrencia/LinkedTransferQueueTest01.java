@@ -8,6 +8,10 @@ public class LinkedTransferQueueTest01 {
     public static void main(String[] args) throws InterruptedException {
         TransferQueue<Object> tq = new LinkedTransferQueue<>();
 
+        System.out.println(tq.remainingCapacity());
+
+        System.out.println();
+
         System.out.println(tq.add("Renan"));
         System.out.println(tq.offer("Renan"));
         System.out.println(tq.offer("Renan",10, TimeUnit.SECONDS));

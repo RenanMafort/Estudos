@@ -1,11 +1,14 @@
 package br.com.devdojo.varargs.exceptions;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 public class RuntimeExceptionTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         try {
             divisao(1,0);
         }catch (RuntimeException e ){
-            e.printStackTrace();
+            e.printStackTrace(new PrintWriter("arquivos/teste.txt"));
         }
         System.out.println("Finalizado");
     }

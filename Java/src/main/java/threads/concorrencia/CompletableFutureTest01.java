@@ -3,11 +3,12 @@ package threads.concorrencia;
 import threads.concorrencia.service.StoreSerivce;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 public class CompletableFutureTest01 {
     public static void main(String[] args) {
         StoreSerivce storeSerivce = new StoreSerivce();
-        searchPriceSync(storeSerivce);
+        searchPricesAsyncFuture(storeSerivce);
 
     }
 
@@ -21,13 +22,20 @@ public class CompletableFutureTest01 {
         System.out.printf("Time passed to searchPriceSync %d%n",end-start);
 
     }
+
     private static void searchPricesAsyncFuture(StoreSerivce storeSerivce){
         long start = System.currentTimeMillis();
+
+        Future<Double> pricesAsyncFuture1 = storeSerivce.getPricesAsyncFuture("Store 1");
+        Future<Double> pricesAsyncFuture2 = storeSerivce.getPricesAsyncFuture("Store 2");
+        Future<Double> pricesAsyncFuture3 = storeSerivce.getPricesAsyncFuture("Store 3");
+        Future<Double> pricesAsyncFuture4 = storeSerivce.getPricesAsyncFuture("Store 4");
         try {
-            storeSerivce.getPricesAsyncFuture("Store 1").get();
-            storeSerivce.getPricesAsyncFuture("Store 2").get();
-            storeSerivce.getPricesAsyncFuture("Store 3").get();
-            storeSerivce.getPricesAsyncFuture("Store 4").get();
+            Double v1 = pricesAsyncFuture1.get();
+            Double v2 = pricesAsyncFuture2.get();
+            Double v3 = pricesAsyncFuture3.get();
+            Double v4 = pricesAsyncFuture4.get();
+            System.out.println(v1 + "" + v2 + v3 + v4);
         }catch (InterruptedException | ExecutionException e){
             e.printStackTrace();
         }

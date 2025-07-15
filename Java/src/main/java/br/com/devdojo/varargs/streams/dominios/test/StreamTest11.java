@@ -8,7 +8,7 @@ import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StreamTest11 {
+public class    StreamTest11 {
     private static List<LighNovel> list = new ArrayList<>(List.of(
             new LighNovel("Renan",33.90),
             new LighNovel("Abcat",2.00),

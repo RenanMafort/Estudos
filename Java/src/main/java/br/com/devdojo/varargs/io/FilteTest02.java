@@ -17,12 +17,17 @@ public class FilteTest02 {
 //        boolean isRenamed = fileArquivoDiretorio.renameTo(fileRenamed);
 //        System.out.println(isRenamed);
 //
-        File diretorioRenamed = new File("pasta_renan_renomeado");
+//        File diretorioRenamed = new File("pasta_renan_renomeado");
 //        boolean isDiretorioRenomeado = fileDiretorio.renameTo(diretorioRenamed);
 //        System.out.println(isDiretorioRenomeado);
+//
+//        boolean isRenamedRenan = diretorioRenamed.renameTo(new File("pasta_renan_renomeado2222222000000"));
+//        System.out.println(isRenamedRenan);
 
-        boolean isRenamedRenan = diretorioRenamed.renameTo(new File("pasta_renan_renomeado2222222000000"));
-        System.out.println(isRenamedRenan);
+        File file = new File("pasta_renan_renomeado2222222000000");
+        boolean deboraCamila = file.renameTo(new File("debora_camila"));
+        System.out.println(deboraCamila);
+
 
     }
 }

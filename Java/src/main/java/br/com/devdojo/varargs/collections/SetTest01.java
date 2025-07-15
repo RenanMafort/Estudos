@@ -3,7 +3,9 @@ package br.com.devdojo.varargs.collections;
 import br.com.devdojo.varargs.collections.dominio.Manga;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.Vector;
 
 public class SetTest01 {
     public static void main(String[] args) {
@@ -18,6 +20,8 @@ public class SetTest01 {
         for (Manga manga : mangas) {
             System.out.println(manga);
         }
+
+        List<String> teste = new Vector<>();
 
     }
 }

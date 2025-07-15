@@ -15,7 +15,7 @@ public class SerializationTest01<T> {
         Aluno aluno = new Aluno(1L,"Renan","1234");
         Turma turma = new Turma("9b","9c","9d");
         aluno.setTurma(turma);
-//        serializar(aluno);
+        serializar(aluno);
         deserializar();
     }
 

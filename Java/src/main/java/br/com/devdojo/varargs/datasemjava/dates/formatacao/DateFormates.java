@@ -6,7 +6,7 @@ import java.util.Calendar;
 public class DateFormates {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
-        DateFormat[] df = new DateFormat[7];
+        DateFormat[] df = new DateFormat[8];
         df[0] = DateFormat.getInstance();
         df[1] = DateFormat.getDateInstance();
         df[2] = DateFormat.getDateTimeInstance();
@@ -14,9 +14,10 @@ public class DateFormates {
         df[4] = DateFormat.getDateInstance(DateFormat.MEDIUM);
         df[5] = DateFormat.getDateInstance(DateFormat.LONG);
         df[6] = DateFormat.getDateInstance(DateFormat.FULL);
+        df[7] = DateFormat.getDateTimeInstance(DateFormat.FULL,1);
 
-        System.out.println("Calendar" + calendar);
-        System.out.println("Calendar" + calendar.getTime());
+//        System.out.println("Calendar" + calendar);
+//        System.out.println("Calendar" + calendar.getTime());
         for (DateFormat dt: df) {
             System.out.println(dt.format(calendar.getTime()));
         }

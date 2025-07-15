@@ -31,7 +31,7 @@ public class ConnectionFactoryTest01 {
 //        ProducesService.showTypeScrollWorking();
 
 //        log.info(ProducesService.findByNameAndToLowerCase("Testando"));
-//        log.info(ProducesService.findByNamePreparedStatement("renan sereia or X'='X"));
+        log.info(ProducesService.findByNamePreparedStatement("renan sereia or X'='X"));
         ProducesService.updatePreparedStatement(producer);
 
 

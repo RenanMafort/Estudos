@@ -5,6 +5,7 @@ import br.com.devdojo.varargs.exceptions.exceptioncustomizadas.LoginInvalidoExce
 import java.io.FileNotFoundException;
 
 public class Funcionario extends Pessoa{
+    @Override
     public void salvar() throws LoginInvalidoException, FileNotFoundException {
         System.out.println("Salvando Funcionario");
     }

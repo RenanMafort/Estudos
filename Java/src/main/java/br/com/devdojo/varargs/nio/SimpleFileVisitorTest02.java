@@ -31,7 +31,7 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 }
 public class SimpleFileVisitorTest02 {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("renansereia/renan");
+        Path path = Paths.get("renansereia");
         Files.walkFileTree(path, new ListAllFiles());
     }
 }

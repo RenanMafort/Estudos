@@ -1,11 +1,12 @@
 package br.com.devdojo.varargs.classesabstratas;
 
+
 public class Teste {
     public static void main(String[] args) {
-        Integer number = 9;
-        while (++number <= 10){
-            System.out.println(number);
-        }
+        Gerente gerente = new Gerente("Nami",5000);
+        Desenvolvedor desenvolvedor = new Desenvolvedor("Renan",12000);
+        System.out.println(gerente);
+        System.out.println(desenvolvedor);
 
     }
 }

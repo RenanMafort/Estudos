@@ -7,6 +7,11 @@ import java.util.Objects;
 public class EqualsTest01 {
     public static void main(String[] args) {
 
+        String nome = "Renan Sereia";
+        String nome2 = new String("Renan Sereia");
+
+        System.out.println(nome == nome2);
+
         SmartPhone smartPhone1 = new SmartPhone("1ABA","SAMSUNG");
         SmartPhone smartPhone2 = new SmartPhone("1ABA","SAMSUNG");
 //

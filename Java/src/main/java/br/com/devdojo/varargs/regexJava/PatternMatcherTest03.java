@@ -13,7 +13,7 @@ public class PatternMatcherTest03 {
         // \W = Tudo o que não for  a-ZA-Z, numeros, e _
         //[]
 //        String regex = "[a-zA-C]";
-        String regex = "0[Xx][0-9a-fA-F]";
+        String regex = "0[Xx]([0-9A-Fa-f])+(\\s|$)";
         String texto = "12 0x 0x 0xFFABC 0x109 0x1";
 
         Pattern pattern = Pattern.compile(regex);

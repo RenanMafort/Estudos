@@ -13,7 +13,7 @@ public class BynariSearch01 {
         numeros.add(4);
         // (-(ponto de inserção)-1)
 //        Collections.sort(numeros);
-        System.out.println(Collections.binarySearch(numeros,1));
+        System.out.println(Collections.binarySearch(numeros,15));
 
         int count = 0;
 

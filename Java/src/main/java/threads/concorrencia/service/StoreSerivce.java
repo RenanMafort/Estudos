@@ -14,6 +14,11 @@ public class StoreSerivce {
 
         return ex.submit(this::priceGenerator);
     }
+    public CompletableFuture<Double> getPricesAsyncComplateFuture(String storeName){
+        System.out.printf("Getting prices sync for store %s%n",storeName);
+
+        return CompletableFuture.supplyAsync(this::priceGenerator);
+    }
 
     public static void shutDown(){
         ex.shutdown();

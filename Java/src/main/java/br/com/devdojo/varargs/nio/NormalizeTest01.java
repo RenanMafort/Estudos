@@ -12,7 +12,7 @@ public class NormalizeTest01 {
         System.out.println(path.normalize());
 
         Path path2 = Paths.get("/home/./renan/./dev/");
-        Path path3 = Paths.get("/home/./renan/.  renan / / / / / //dev/");
+        Path path3 = Paths.get("/home/./renan/.  renan/dev/");
         System.out.println(path2);
         System.out.println(path2.normalize());
         System.out.println(path3);

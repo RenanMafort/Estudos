@@ -1,5 +1,7 @@
 package br.com.devdojo.varargs.methodreference;
 
+import com.sun.istack.NotNull;
+
 @FunctionalInterface
 interface Figura2d{
     void imprimeFigura(Double largura, Double altura);

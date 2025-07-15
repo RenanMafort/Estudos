@@ -51,6 +51,6 @@ public class Consumidor implements Comparable<Consumidor> {
 
     @Override
     public int compareTo(Consumidor o) {
-        return this.getId().compareTo(o.getId());
+        return o.getId() < this.id ? -1 : ((o.getId().equals(this.id)) ? 0 : 1);
     }
 }

@@ -12,6 +12,9 @@ import java.io.IOException;
 public class FileWriter01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
+        if (file.exists()){
+            file.delete();
+        }
         try(FileWriter fw = new FileWriter(file,true)) {
             fw.write("Testando escrita em arquivo\nTestando quebra linha\n");
             fw.flush();

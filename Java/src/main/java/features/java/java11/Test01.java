@@ -15,6 +15,7 @@ public class Test01 {
 
         String repeat = "Repetinho.. ";
         System.out.println(repeat.repeat(2));
+        System.out.println(repeat.intern());
 
     }
 }

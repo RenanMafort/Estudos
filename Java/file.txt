@@ -1,0 +1,3 @@
+testando
+leitura
+do arquivo

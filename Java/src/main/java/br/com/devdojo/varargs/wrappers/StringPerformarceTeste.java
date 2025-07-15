@@ -7,23 +7,23 @@ public class StringPerformarceTeste {
 
         System.out.println(text.length());
 
-//
-//        int i = 0, sa = 2;
-//        long inicio = System.currentTimeMillis();
-//        concatString(100_000);
-//        long fim = System.currentTimeMillis();
-//        System.out.println("String : " + (fim - inicio) + "ms");
-//
-//        long inicio1 = System.currentTimeMillis();
-//        concatStringBuilder((int)100_000L);
-//        concatStringBuilder(Integer.parseInt(String.valueOf(100_000L)));
-//        long fim1 = System.currentTimeMillis();
-//        System.out.println("StringBuider : " + (fim1 - inicio1) + "ms");
-//
-//        long inicio2 = System.currentTimeMillis();
-//        concatStringBuffer(100_000);
-//        long fim2 = System.currentTimeMillis();
-//        System.out.println("StringBuffer : " + (fim2 - inicio2) + "ms");
+
+        int i = 0, sa = 2;
+        long inicio = System.currentTimeMillis();
+        concatString(100_000);
+        long fim = System.currentTimeMillis();
+        System.out.println("String : " + (fim - inicio) + "ms");
+
+        long inicio1 = System.currentTimeMillis();
+        concatStringBuilder((int)100_000L);
+        concatStringBuilder(Integer.parseInt(String.valueOf(100_000L)));
+        long fim1 = System.currentTimeMillis();
+        System.out.println("StringBuider : " + (fim1 - inicio1) + "ms");
+
+        long inicio2 = System.currentTimeMillis();
+        concatStringBuffer(100_000);
+        long fim2 = System.currentTimeMillis();
+        System.out.println("StringBuffer : " + (fim2 - inicio2) + "ms");
 
         int limit = -Integer.MAX_VALUE;
         int limit2 = Integer.MAX_VALUE;

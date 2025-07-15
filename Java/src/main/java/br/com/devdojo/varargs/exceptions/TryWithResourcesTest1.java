@@ -8,11 +8,7 @@ import java.io.*;
 
 public class TryWithResourcesTest1 {
     public static void main(String[] args) {
-        Integer num1 = 1;
-
-        num1.intValue();
-
-        lerArquivo();
+        lerArquivoTeste();
     }
 
     public static void lerArquivo(){
@@ -26,6 +22,18 @@ public class TryWithResourcesTest1 {
             e.printStackTrace();
         }
     }
+
+    public static void lerArquivoTeste(){
+
+        try{
+            File file = new File("arquivos/teste.txt");
+            boolean newFile = file.createNewFile();
+            System.out.println("Arquivo is created? :" + newFile);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
     public static void lerArquivo2(){
         Reader reader = null;
         try {

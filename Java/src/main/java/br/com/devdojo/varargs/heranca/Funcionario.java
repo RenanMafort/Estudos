@@ -7,6 +7,11 @@ public class Funcionario extends Pessoa {
     public void imprime() {
         System.out.println(this.getNome() + " recebeu " + this.getSalario());
         System.out.println(salario);
+
+//        SUPER
+        System.out.println("\nSUPER\n");
+        super.imprime();
+        System.out.println(super.cpf);;
     }
 
     public double getSalario() {

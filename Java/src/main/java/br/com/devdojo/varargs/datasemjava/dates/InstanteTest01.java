@@ -11,6 +11,6 @@ public class InstanteTest01 {
         System.out.println(instant.getNano());
         System.out.println(instant.getEpochSecond());
         System.out.println(Instant.ofEpochSecond(3,1_000_000_000));
-        System.out.println(Instant.ofEpochSecond(3,1_000_000_000));
+        System.out.println(Instant.ofEpochSecond(43,1_000_000_000));
     }
 }

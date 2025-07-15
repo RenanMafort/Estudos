@@ -1,8 +1,5 @@
 package JPA.HIBERNATE.infra;
 
-import JPA.HIBERNATE.modelo.basico.Entidade;
-import JPA.HIBERNATE.modelo.basico.Produto;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

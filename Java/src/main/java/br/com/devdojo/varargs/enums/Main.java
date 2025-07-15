@@ -1,6 +1,7 @@
 package br.com.devdojo.varargs.enums;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +25,6 @@ public class Main {
 
         System.out.println(TipoEnum.PESSOA_JURIDICA.getNome().length());
         System.out.println(Arrays.toString(TipoEnum.values()));
+
     }
 }

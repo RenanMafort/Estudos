@@ -18,18 +18,7 @@ public class MeuZip {
 
     public static void zip(Path sourceZip, Path filesZip){
 
-        try (ZipOutputStream zip = new ZipOutputStream(Files.newOutputStream(sourceZip));
-             DirectoryStream<Path> stream = Files.newDirectoryStream(filesZip)){
-            for (Path file: stream){
-                ZipEntry zipando = new ZipEntry(file.getFileName().toString());
-                zip.putNextEntry(zipando);
-                Files.copy(file,zip);
-                zip.closeEntry();
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        ZipOutPutStreamTest01.zipOutputStream(sourceZip, filesZip);
 
     }
 }

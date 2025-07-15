@@ -17,6 +17,7 @@ public class DurationTest01 {
         LocalDate localDate = LocalDate.parse("2020-02-21");
         System.out.println(Duration.ofDays(22));
         System.out.println(Duration.ofMinutes(22));
+        System.out.println(Duration.ofSeconds(1));
     }
 
 

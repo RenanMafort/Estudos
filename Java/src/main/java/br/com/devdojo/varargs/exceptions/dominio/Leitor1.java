@@ -8,4 +8,8 @@ public class Leitor1 implements Closeable {
     public void close() throws IOException {
         System.out.println("Fechando leitor 1");
     }
+
+    public void teste() throws Exception{
+        System.out.println("Teste throws exception");
+    }
 }

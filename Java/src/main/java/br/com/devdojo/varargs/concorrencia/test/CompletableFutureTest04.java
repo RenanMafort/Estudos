@@ -32,7 +32,7 @@ public class CompletableFutureTest04 {
                 .map(cf -> cf.thenApply(Quote::newQuote))
                 .map(cf -> cf.thenCompose(quote ->
                         CompletableFuture.supplyAsync(() -> service.pplyDiscount(quote))))
-                .collect(Collectors.toList());
+                .toList();
 
         collect.stream().map(CompletableFuture::join).forEach(System.out::println);
     }

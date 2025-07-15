@@ -2,6 +2,7 @@ package br.com.devdojo.varargs.optional.test;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public class OptionalTest01 {
     public static void main(String[] args) {
@@ -14,6 +15,9 @@ public class OptionalTest01 {
 
         System.out.println("-----------------------");
         Optional<String> rennan = findName("Rennas  ");
+
+        rennan.ifPresent(System.out::println);
+
         rennan.orElseThrow(ArrayIndexOutOfBoundsException::new);
 
 //        System.out.println(rennan);
