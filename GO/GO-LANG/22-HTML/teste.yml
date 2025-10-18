@@ -1,0 +1,15 @@
+# Use root/example as user/password credentials
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_USER: cadastro
+      MYSQL_PASSWORD: 1234
+      MYSQL_DATABASE: devbook
+    # (this is just an example, not intended to be a production configuration)
+    ports:
+      - "3306:3306"

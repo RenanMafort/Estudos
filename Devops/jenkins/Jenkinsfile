@@ -1,0 +1,81 @@
+pipeline{
+    agent any
+    stages{
+
+        stage('limpar imagens e containers'){
+            steps{
+                sh ' docker ps -aq | xargs -r docker rm -f'
+                sh ' docker images -aq | xargs -r docker rmi -f'
+                sh 'docker system prune'
+            }
+        }
+
+        stage('build da imagem docker'){
+            steps{
+                sh 'docker build -t devop/app ./'
+            }
+        }
+        
+        stage('subir docker compose - redis e app'){
+            steps{
+                sh 'docker-compose up --build -d'
+            }
+        }
+
+        stage('sleep para subida de containers'){      
+            steps{
+                sh 'sleep 10'
+            }
+        }
+
+         stage('Validação SonarQube'){
+            steps{
+                script{
+                    scannerHome = tool 'sonar-scanner';
+                }
+                sh 'echo ${scannerHome}'
+                withSonarQubeEnv('sonar-server'){
+                    sh """
+                    ${scannerHome}/bin/sonar-scanner \
+                    -Dsonar.projectKey=redis-app \
+                    -Dsonar.sources=. \
+                    -Dsonar.host.url=${SONAR_HOST_URL} \
+                    -Dsonar.login=${SONAR_AUTH_TOKEN}
+                    """
+                }
+            }
+        }
+
+         stage('Quality Gate'){
+            steps{
+                waitForQualityGate abortPipeline: true
+            }
+        }
+        
+        stage('request path application'){
+            steps{
+                sh 'chmod +x teste.sh'
+                sh './teste.sh'
+            }
+        }
+
+        stage('Shutdown dos containers de teste'){
+            steps{
+                sh 'docker compose down'
+            }
+        }
+
+        stage('PUsh da imagem docker para o repo nexus'){
+            steps{
+                script{
+                    withCredentials([usernamePassword(credentialsId: 'nexus-user',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+                        sh 'docker login -u $USERNAME -p $PASSWORD' ${NEXUS_URL}
+                        sh 'docker tag renan.app:latest ${NEXUS_URL}/renan/app'
+                        sh 'docker push ${NEXUS_URL}/renan/app'
+                    }
+                }
+            }
+        }
+    }
+}
+

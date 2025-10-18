@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>Pagina Inicial</h2>
+
+
+    <h2>
+        <marquee>Seja bem vindo, {{ .Nome }}</marquee>
+        <marquee>Seja bem vindo, {{ .SobreNome }}</marquee>
+    </h2>
+<button id="botao">Clique aqui</button>
+    <p id="texto">Texto</p>
+</body>
+
+<script>
+    var botao = document.getElementById("botao");
+    botao.onclick = function() {
+        alert("Botão clicado com sucesso!");
+
+        var texto = document.getElementById("texto");
+        texto.innerText = "Novo texto!";
+    }
+</script>
+</html>
