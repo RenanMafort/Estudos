@@ -1,0 +1,15 @@
+Testando Cabeçalho;
+NISS;NISS Titular;Numero Movimento;Tipo Movimento;Nome Registo Subsistema Origem;Código Serviço;Estabelecimento;Código Âmbito;Descrição de Tipo Beneficio;Descrição Beneficio;Ano/mês;Data Inicio;Data Fim;Numero Dias Origem;Valor;Numero Nota Reposição;
+;;;VR;;;;;;;;;;;1;;
+;;;VR;;;;;;;;;;;2;;
+;;;VR;;;;;;;;;;;3;;
+;;;VR;;;;;;;;;;;5;;
+;;;VR;;;;;;;;;;;5;;
+;;;;;;;;;;;;;Valor a Débito;16;;
+;;;VR;;;;;;;;;;;6;;
+;;;;;;;;;;;;;Valor a Débito (Plano em Curso);6;;
+;;;OP;;;;;;;;;;;2;;
+;;;OD;;;;;;;;;;;3;;
+;;;OT;;;;;;;;;;;4;;
+;;;;;;;;;;;;;Valor Retenções;9;;
+;;;;;;;;;;;;;Valor Recebido;-31;;

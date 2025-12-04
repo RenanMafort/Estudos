@@ -1,8 +1,5 @@
 package br.com.devdojo.varargs.generics.service;
 
-import br.com.devdojo.varargs.generics.dominio.Barco;
-import br.com.devdojo.varargs.generics.dominio.Carro;
-
 import java.util.List;
 
 public class RentalServices<T> {
